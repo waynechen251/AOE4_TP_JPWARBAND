@@ -1,0 +1,38 @@
+<instance version="4" description="Unlocks Imperial Age archer." template="upgrade">
+	<group name="upgrade_bag">
+		<group name="ui_info">
+			<file name="icon_name" value="races\japanese\upgrades\yumi_ashigaru_upgrade_4" overrideParent="True" />
+		</group>
+		<list name="requirements">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="448946082" List.ParentItemID="448946082">
+				<instance_reference name="upgrade_name" value="upgrade\races\japanese\units\upgrade_unit_archer_3_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-833142365" List.ParentItemID="-833142365">
+				<instance_reference name="upgrade_name" value="upgrade\races\japanese\units\upgrade_unit_archer_4_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+			</template_reference>
+		</list>
+		<list name="upgrade_type" overrideParent="True">
+			<enum name="upgrade_type" value="military_upgrade" List.ItemID="764040197" />
+			<enum name="upgrade_type" value="japanese_upgrade" overrideParent="True" List.ItemID="-301762244" />
+			<enum name="upgrade_type" value="scar_unit_upgrade" List.ItemID="-2115918543" />
+			<enum name="upgrade_type" value="scar_tiered_upgrade" List.ItemID="-1977692423" />
+			<enum name="upgrade_type" value="scar_imperial_age_upgrade" List.ItemID="-1849339862" />
+		</list>
+		<group name="time_cost" overrideParent="True">
+			<enum_table name="cost">
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="food" value="0" />
+				<float name="wood" value="0" />
+				<float name="stone" value="0" />
+				<float name="gold" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<float name="time_seconds" value="5" />
+		</group>
+	</group>
+	<uniqueid name="pbgid" value="2127612" />
+	<instance_reference name="parent_pbg" value="upgrade\races\common\units\upgrade_unit_archer_4" />
+</instance>

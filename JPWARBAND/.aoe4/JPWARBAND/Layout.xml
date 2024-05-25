@@ -9,7 +9,8 @@
     <LayoutPanel Orientation="Vertical">
       <LayoutDocumentPane>
         <LayoutDocument Title="Render" ContentId="EssenceEditor.Render" LastActivationTimeStamp="05/25/2024 17:28:45" />
-        <LayoutDocument Title="ebps" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|ebps" LastActivationTimeStamp="05/25/2024 17:30:13" />
+        <LayoutDocument Title="ebps" ContentId="Category|ebps" LastActivationTimeStamp="05/25/2024 17:30:13" />
+        <LayoutDocument Title="upgrade" IsSelected="True" IsLastFocusedDocument="True" ContentId="Category|upgrade" LastActivationTimeStamp="05/25/2024 18:07:30" />
       </LayoutDocumentPane>
       <LayoutAnchorablePane Id="1b84d0aa-3fd1-4781-909d-fa3e4b760d6d" Name="anchorablesPane" DockHeight="300">
         <LayoutAnchorable AutoHideMinWidth="100" AutoHideMinHeight="100" Title="Output" IsSelected="True" ContentId="Output" LastActivationTimeStamp="07/28/2020 09:55:16" />

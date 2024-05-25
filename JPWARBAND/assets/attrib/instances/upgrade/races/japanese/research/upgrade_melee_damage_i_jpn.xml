@@ -1,0 +1,61 @@
+<instance version="4" description="Improves melee damage for all non-siege units" template="upgrade">
+	<group name="upgrade_bag">
+		<group name="time_cost" overrideParent="True">
+			<enum_table name="cost">
+				<float name="food" value="0" overrideParent="True" />
+				<float name="stone" value="0" overrideParent="True" />
+				<float name="gold" value="0" overrideParent="True" />
+				<float name="action" value="0" />
+				<float name="command" value="0" />
+				<float name="popcap" value="0" />
+				<float name="wood" value="0" />
+				<float name="militia_hre" value="0" />
+				<float name="merc_byz" value="0" />
+			</enum_table>
+			<float name="time_seconds" value="5" overrideParent="True" />
+		</group>
+		<group name="ui_info">
+			<file name="icon_name" value="races\japanese\upgrades\tatara" overrideParent="True" />
+			<template_reference name="help_text_formatter" value="ui_text_formatter">
+				<list name="formatter_arguments">
+					<int name="int_value" value="1" overrideParent="True" List.ItemID="-1570140452" List.ParentItemID="-1570140452" />
+				</list>
+			</template_reference>
+			<template_reference name="ui_info_extended" value="tables\ui_info_ext">
+				<template_reference name="quick_commands_launch_hud_info" value="ui_quick_commands_launch_hud_info">
+					<int name="quick_commands_priority" value="180" overrideParent="True" />
+				</template_reference>
+				<template_reference name="command_card_info" value="ui_command_card_info">
+					<group name="ui_position">
+						<int name="ui_position_row" value="1" overrideParent="True" />
+						<int name="ui_position_column" value="4" overrideParent="True" />
+					</group>
+				</template_reference>
+			</template_reference>
+			<string name="tooltip_data_template" value="UniqueBuildingUpgradeDataTemplate" overrideParent="True" />
+			<string name="sound" value="sfx_ui_produce_upgrade_building_click" overrideParent="True" />
+		</group>
+		<list name="requirements" removedIds="-1360095523, -964710157">
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="805101891" List.ParentItemID="805101891">
+				<instance_reference name="upgrade_name" value="upgrade\dev\ages\dark_age" overrideParent="True" />
+			</template_reference>
+			<template_reference name="required" value="requirements\required_player_upgrade" List.ItemID="-1699939280" List.ParentItemID="-1699939280">
+				<instance_reference name="upgrade_name" value="upgrade\races\japanese\research\upgrade_melee_damage_i_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+			</template_reference>
+		</list>
+		<group name="state_tree_references">
+			<template_reference name="on_action_entity_tree" value="state_tree_reference_info">
+				<state_tree_node name="ActionTree_OpeningBranch" value="common_upgrade_master\melee_damage_i\normal_modifiers\melee_damage_i" overrideParent="True" />
+			</template_reference>
+		</group>
+		<list name="upgrade_type" overrideParent="True">
+			<enum name="upgrade_type" value="military_upgrade" List.ItemID="-396338738" />
+			<enum name="upgrade_type" value="japanese_upgrade" overrideParent="True" List.ItemID="1709144966" />
+			<enum name="upgrade_type" value="scar_military_upgrade" List.ItemID="674716680" />
+			<enum name="upgrade_type" value="scar_tiered_upgrade" List.ItemID="-1656687613" />
+			<enum name="upgrade_type" value="scar_feudal_age_upgrade" List.ItemID="1618940887" />
+		</list>
+	</group>
+	<uniqueid name="pbgid" value="2136857" />
+	<instance_reference name="parent_pbg" value="upgrade\races\common\research\upgrade_melee_damage_i" />
+</instance>
