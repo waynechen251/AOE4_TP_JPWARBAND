@@ -3,6 +3,17 @@
 		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="196113294" List.ParentItemID="196113294">
 			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_medium_junk" overrideParent="True" />
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="905115418" List.ParentItemID="905115418">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-335026862" List.ParentItemID="-335026862">
+			<float name="personnel_pop" value="0" overrideParent="True" />
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="1800188115" List.ParentItemID="1800188115">
 			<list name="tier_group_list">
 				<list name="tier_group" List.ItemID="-1852483390" List.ParentItemID="-1852483390">

@@ -18,9 +18,10 @@
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-599506936" List.ParentItemID="-599506936">
 			<group name="time_cost">
 				<enum_table name="cost">
-					<float name="wood" value="300" overrideParent="True" />
-					<float name="stone" value="900" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="stone" value="0" overrideParent="True" />
 				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\impass_ext" List.ItemID="-1048125279" List.ParentItemID="-1048125279">

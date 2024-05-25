@@ -15,6 +15,14 @@
 				<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="1472344055" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="27741658" List.ParentItemID="27741658">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="stone" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\territory_sector_layout_ext" List.ItemID="302288400" List.ParentItemID="302288400">
 			<template_reference name="placement_style" value="options\ebpextensions\hexmapext\placement_styles\placement_primary_fence_replacer">
 				<instance_reference name="blueprint_to_replace" value="ebps\races\japanese\buildings\building_defense_wall_jpn\building_defense_wall_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />

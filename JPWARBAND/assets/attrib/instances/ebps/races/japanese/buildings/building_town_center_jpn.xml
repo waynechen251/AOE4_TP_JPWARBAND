@@ -38,6 +38,15 @@
 				<instance_reference name="ability" value="abilities\always_on_abilities\japanese\shinto_sacred_object_buff_jpn" List.ItemID="-2004860836" List.ListAction="Append" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="268370002" List.ParentItemID="268370002">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="stone" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="-272167440" List.ParentItemID="-272167440">
 			<group name="ui_codex_info">
 				<bool name="exclusive" value="True" overrideParent="True" />

@@ -3,9 +3,13 @@
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="630940021" List.ParentItemID="630940021">
 			<group name="time_cost">
 				<enum_table name="cost">
-					<float name="wood" value="45" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
 				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
 			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="-1907399516" List.ParentItemID="-1907399516">
+			<float name="personnel_pop" value="0" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\resource_gatherer_ext" List.ItemID="-151063231" List.ParentItemID="-151063231">
 			<list name="gather_types">

@@ -13,10 +13,11 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1978222223" List.ParentItemID="1978222223">
 			<group name="time_cost">
-				<float name="time_seconds" value="15" overrideParent="True" />
+				<float name="time_seconds" value="5" overrideParent="True" />
 				<enum_table name="cost">
-					<float name="gold" value="30" overrideParent="True" />
+					<float name="gold" value="0" overrideParent="True" />
 					<float name="action" value="1" overrideParent="True" />
+					<float name="food" value="0" overrideParent="True" />
 				</enum_table>
 			</group>
 		</template_reference>

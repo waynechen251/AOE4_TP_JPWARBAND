@@ -47,15 +47,15 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1310151938">
 			<group name="time_cost">
-				<float name="time_seconds" value="15" />
+				<float name="time_seconds" value="5" />
 				<enum_table name="cost">
 					<float name="action" value="1" />
 					<float name="command" value="0" />
 					<float name="popcap" value="0" />
-					<float name="food" value="140" />
+					<float name="food" value="0" />
 					<float name="wood" value="0" />
 					<float name="stone" value="0" />
-					<float name="gold" value="110" />
+					<float name="gold" value="0" />
 					<float name="militia_hre" value="0" />
 					<float name="merc_byz" value="0" />
 				</enum_table>

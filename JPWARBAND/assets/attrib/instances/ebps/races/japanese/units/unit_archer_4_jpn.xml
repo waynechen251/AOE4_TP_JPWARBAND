@@ -13,14 +13,19 @@
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1894599391" List.ParentItemID="1894599391">
 			<group name="time_cost">
 				<enum_table name="cost">
-					<float name="wood" value="35" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="popcap" value="0" overrideParent="True" />
+					<float name="food" value="0" overrideParent="True" />
 				</enum_table>
-				<float name="time_seconds" value="13" overrideParent="True" />
+				<float name="time_seconds" value="5" overrideParent="True" />
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-123081057" List.ParentItemID="-123081057">
 			<bool name="regeneration_disabled" value="False" overrideParent="True" />
 			<float name="hitpoints" value="85" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1518633321" List.ParentItemID="1518633321">
+			<float name="personnel_pop" value="0" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-1451740830" List.ParentItemID="-1451740830">
 			<list name="race_type_list" overrideParent="True">

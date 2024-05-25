@@ -10,8 +10,20 @@
 				</group>
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="610055753" List.ParentItemID="610055753">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="0" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="-2112301127" List.ParentItemID="-2112301127">
 			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\population_ext" List.ItemID="1217263963" List.ParentItemID="1217263963">
+			<float name="personnel_pop" value="0" overrideParent="True" />
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1344262557" List.ParentItemID="1344262557">
 			<list name="race_type_list" overrideParent="True">

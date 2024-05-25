@@ -17,6 +17,14 @@
 				<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="-694778155" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1884350648" List.ParentItemID="1884350648">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ability_ext" List.ItemID="-790703336" List.ParentItemID="-790703336">
 			<list name="abilities">
 				<instance_reference name="ability" value="abilities\always_on_abilities\japanese\shinto_sacred_object_buff_jpn" List.ItemID="819739798" List.ListAction="Append" />

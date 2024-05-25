@@ -14,6 +14,14 @@
 				<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="240443385" />
 			</list>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-872126335" List.ParentItemID="-872126335">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\ui_ext" List.ItemID="202708967" List.ParentItemID="202708967">
 			<list name="ui_extra_infos" overrideParent="True">
 			</list>

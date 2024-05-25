@@ -7,7 +7,10 @@
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="998092536" List.ParentItemID="998092536">
 			<group name="time_cost">
-				<float name="time_seconds" value="120" overrideParent="True" />
+				<float name="time_seconds" value="5" overrideParent="True" />
+				<enum_table name="cost">
+					<float name="stone" value="0" overrideParent="True" />
+				</enum_table>
 			</group>
 		</template_reference>
 		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="2028962899" List.ParentItemID="2028962899">

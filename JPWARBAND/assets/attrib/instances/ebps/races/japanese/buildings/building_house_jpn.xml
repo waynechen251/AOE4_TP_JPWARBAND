@@ -27,6 +27,14 @@
 				<float name="Fire" value="0" overrideParent="True" />
 			</enum_table>
 		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-307639384" List.ParentItemID="-307639384">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="wood" value="0" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="5" overrideParent="True" />
+			</group>
+		</template_reference>
 		<template_reference name="exts" value="ebpextensions\construction_ext" List.ItemID="54229194" List.ParentItemID="54229194">
 			<group name="on_construction_complete_state_tree_refs">
 				<string name="while_construction_complete_entity_state_tree_ref" value="building_construction_complete\buildings\farmhouse_always_run_jpn" overrideParent="True" />
