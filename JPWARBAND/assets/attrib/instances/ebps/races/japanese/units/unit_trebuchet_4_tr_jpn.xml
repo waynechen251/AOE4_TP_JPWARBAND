@@ -1,0 +1,57 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1856538671" List.ParentItemID="1856538671">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\units\unit_trebuchet_4_tr_chi" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-1297782500" List.ParentItemID="-1297782500">
+			<instance_reference name="hit_material" value="hit_material\wood" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1298313032" List.ParentItemID="1298313032">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="739298946" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1291477631" List.ParentItemID="1291477631">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="716609957" List.ParentItemID="716609957">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="-496775897" List.ParentItemID="-496775897">
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\chinese\weapons\wpn_siege_trebuchet_4_tr_chi" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+			<list name="target_scanning_priority_override" overrideParent="True">
+				<group name="override" List.ItemID="918117914">
+					<enum name="target_type" value="building" overrideParent="True" />
+					<float name="priority_value" value="110" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="62854741" List.ParentItemID="62854741">
+			<instance_reference name="pass_type" value="pass_types\vehicle" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="1855198795" List.ParentItemID="1855198795">
+			<string name="default_animation" value="setup\idle_teardown" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="425911276" List.ParentItemID="425911276">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-977521267" List.ParentItemID="-977521267">
+					<group name="tier" List.ItemID="59778614" List.ParentItemID="59778614">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\units\tier4_trebuchet_tr_jpn" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="146468208" List.ParentItemID="146468208">
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="5939655" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_trebuchet_4_traction" />
+</instance>

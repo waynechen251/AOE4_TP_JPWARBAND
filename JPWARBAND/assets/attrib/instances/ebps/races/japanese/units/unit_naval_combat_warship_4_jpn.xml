@@ -1,0 +1,154 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-638368952" List.ParentItemID="-638368952">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_naval_large_junk" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="-948361275" List.ParentItemID="-948361275">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="170" overrideParent="True" />
+					<float name="wood" value="220" overrideParent="True" />
+					<float name="gold" value="220" overrideParent="True" />
+				</enum_table>
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" List.ItemID="1734868903" List.ParentItemID="1734868903">
+			<float name="hitpoints" value="650" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="1092792524" List.ParentItemID="1092792524">
+			<list name="hardpoints">
+				<group name="hardpoint" comment="Left AI 1" List.ItemID="1847161327" List.ParentItemID="1847161327">
+					<list name="weapon_table" removedIds="1084176061">
+						<group name="weapon" List.ItemID="48484763" List.ParentItemID="48484763">
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="z" value="0" overrideParent="True" />
+								<float name="y" value="0" overrideParent="True" />
+							</group>
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="" overrideParent="True" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\japanese\weapons\wpn_range_naval_warship_rocket_left_ai_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+					<string name="base_marker" value="mrk_weapon_port_01" overrideParent="True" />
+				</group>
+				<group name="hardpoint" List.ItemID="-1417575735" List.ParentItemID="-1417575735">
+					<list name="weapon_table" removedIds="1138765693">
+						<group name="weapon" List.ItemID="95307603" List.ParentItemID="95307603">
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin" overrideParent="True">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="z" value="0" overrideParent="True" />
+								<float name="y" value="0" />
+							</group>
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="" overrideParent="True" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\japanese\weapons\wpn_range_naval_warship_rocket_left_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+					<string name="base_marker" value="mrk_weapon_port_02" overrideParent="True" />
+				</group>
+				<group name="hardpoint" List.ItemID="-1373081142" List.ParentItemID="-1373081142">
+					<list name="weapon_table" removedIds="1424150356">
+						<group name="weapon" List.ItemID="403349670" List.ParentItemID="403349670">
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin" overrideParent="True">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="z" value="0" overrideParent="True" />
+								<float name="y" value="0" />
+							</group>
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="" overrideParent="True" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\japanese\weapons\wpn_range_naval_warship_rocket_left_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+					<string name="base_marker" value="fx_muz_cannon_011" overrideParent="True" />
+				</group>
+				<group name="hardpoint" comment="Right AI 1&#xD;&#xA;" List.ItemID="822147706" List.ParentItemID="822147706">
+					<list name="weapon_table" removedIds="-564050913">
+						<group name="weapon" List.ItemID="89707258" List.ParentItemID="89707258">
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin" overrideParent="True">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="z" value="0" overrideParent="True" />
+								<float name="y" value="0" />
+							</group>
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\japanese\weapons\wpn_range_naval_warship_rocket_right_ai_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" List.ItemID="-1159284020" List.ParentItemID="-1159284020">
+					<list name="weapon_table" removedIds="892851340">
+						<group name="weapon" List.ItemID="-516039285" List.ParentItemID="-516039285">
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin" overrideParent="True">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="z" value="0" overrideParent="True" />
+								<float name="y" value="0" />
+							</group>
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<instance_reference name="ebp" value="ebps\races\japanese\weapons\wpn_range_naval_warship_rocket_right_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+				<group name="hardpoint" List.ItemID="1848079065" List.ParentItemID="1848079065">
+					<list name="weapon_table" removedIds="80615874">
+						<group name="weapon" List.ItemID="-907429533" List.ParentItemID="-907429533">
+							<float name="length" value="2" overrideParent="True" />
+							<group name="origin" overrideParent="True">
+								<float name="x" value="0" overrideParent="True" />
+								<float name="z" value="0" overrideParent="True" />
+								<float name="y" value="0" />
+							</group>
+							<template_reference name="weapon_entity_attachment" value="options\attachment_types\entity_create_attachment">
+								<template_reference name="entity_attach_data" value="attachments\attach_data_entity">
+									<template_reference name="attach_data" value="attachments\attach_data">
+										<string name="marker_name_parent" value="fx_muz_cannon_010" overrideParent="True" />
+									</template_reference>
+									<instance_reference name="ebp" value="ebps\races\japanese\weapons\wpn_range_naval_warship_rocket_right_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+								</template_reference>
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+			<group name="attack_move">
+				<float name="attack_move_targeting_range" value="35" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-1265230428" List.ParentItemID="-1265230428">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="86044439" List.ParentItemID="86044439">
+					<group name="tier" List.ItemID="1888019086" List.ParentItemID="1888019086">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\units\tier4_naval_combat_warship_jpn" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="4748140" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_naval_combat_warship_4" />
+</instance>

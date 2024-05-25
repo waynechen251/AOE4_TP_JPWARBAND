@@ -1,0 +1,9 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\weapon_ext" List.ItemID="-1963168096" List.ParentItemID="-1963168096">
+			<instance_reference name="weapon" value="weapon\races\japanese\ranged\weapon_naval_warship_rocket_ai_jpn" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="6040817" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_range_naval_waship_cannon_right_ai" />
+</instance>

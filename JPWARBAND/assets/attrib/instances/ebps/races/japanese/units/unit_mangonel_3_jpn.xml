@@ -1,0 +1,65 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="-1152503433" List.ParentItemID="-1152503433">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\units\unit_mangonel_3_chi" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\hit_object_ext" List.ItemID="-302235433" List.ParentItemID="-302235433">
+			<instance_reference name="hit_material" value="hit_material\wood" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="1843239910" List.ParentItemID="1843239910">
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\japanese" overrideParent="True" List.ItemID="-1128976310" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="-1819031405" List.ParentItemID="-1819031405">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="713460248" List.ParentItemID="713460248">
+					<list name="weapon_table">
+						<group name="weapon" List.ItemID="237902918" List.ParentItemID="237902918">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_mangonel_3" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="2082400903" List.ParentItemID="2082400903">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\common\ranged\weapon_mangonel_3_incendiary" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="" overrideParent="True" />
+								<string name="marker_name_parent" value="" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\moving_ext" List.ItemID="1355925552" List.ParentItemID="1355925552">
+			<instance_reference name="pass_type" value="pass_types\vehicle" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="78760080" List.ParentItemID="78760080">
+			<string name="default_animation" value="setup\idle_teardown" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\posture_ext" List.ItemID="91100296" List.ParentItemID="91100296">
+			<instance_reference name="posture_group" value="posture\default_posture_group" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-582767811" List.ParentItemID="-582767811">
+			<instance_reference name="schema" value="statemodel_schema\units\siege_weapon" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="35385129" List.ParentItemID="35385129">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1890826549" List.ParentItemID="-1890826549">
+					<group name="tier" List.ItemID="1871353587" List.ParentItemID="1871353587">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\units\tier3_mangonel_jpn" overrideParent="True" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="7488845" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_mangonel_3" />
+</instance>

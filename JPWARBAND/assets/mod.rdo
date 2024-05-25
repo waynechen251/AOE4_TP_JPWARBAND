@@ -1,0 +1,28 @@
+<DataWarehouse>
+	<!--JPWARBAND/-->
+	<DataObject Name="JPWARBAND" Type="Mod" Id="4284891428995504997" Version="1">
+		<DataProperty Name="m_description" Type="Object">
+			<DataValue Name="util::ReflectLocString">5542240382538789889</DataValue>
+			<!--JPWARBAND/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="5542240382538789889" OwnerId="4284891428995504997">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="686334899"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="1970706986"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="3106874089"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1166654460"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="2"/>
+			</DataObject>
+		</DataProperty>
+		<DataProperty Name="m_name" Type="Object">
+			<DataValue Name="util::ReflectLocString">9816432694272334469</DataValue>
+			<!--JPWARBAND/util::ReflectLocString/-->
+			<DataObject Name="" Type="util::ReflectLocString" Id="9816432694272334469" OwnerId="4284891428995504997">
+				<DataProperty Name="m_modPart2" Type="UInt32" Value="686334899"/>
+				<DataProperty Name="m_modPart3" Type="UInt32" Value="1970706986"/>
+				<DataProperty Name="m_modPart0" Type="UInt32" Value="3106874089"/>
+				<DataProperty Name="m_modPart1" Type="UInt32" Value="1166654460"/>
+				<DataProperty Name="m_locStringKey" Type="Int32" Value="1"/>
+			</DataObject>
+		</DataProperty>
+	</DataObject>
+</DataWarehouse>
+

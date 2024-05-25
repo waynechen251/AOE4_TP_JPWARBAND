@@ -1,0 +1,128 @@
+<instance version="4" description="Onna-Musha castle age horse archer" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="1491559579" List.ParentItemID="1491559579">
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="17356376" List.ParentItemID="17356376">
+			<list name="action_state_trees">
+				<group name="container" List.ItemID="-1844281038" List.ParentItemID="-1844281038">
+					<string name="state_tree" value="unit_action_apply\units\cavalry_archer\audio\rus\3" overrideParent="True" />
+				</group>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\cost_ext" List.ItemID="1012099503" List.ParentItemID="1012099503">
+			<group name="time_cost">
+				<enum_table name="cost">
+					<float name="food" value="80" overrideParent="True" />
+					<float name="wood" value="0" overrideParent="True" />
+					<float name="gold" value="60" overrideParent="True" />
+				</enum_table>
+				<float name="time_seconds" value="24" overrideParent="True" />
+			</group>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\health_ext" comment="Horse and rider entities require identical health_ext values. Keep them in sync." List.ItemID="584609974" List.ParentItemID="584609974">
+			<float name="hitpoints" value="80" overrideParent="True" />
+			<bool name="regeneration_disabled" value="False" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-2085794998" List.ParentItemID="-2085794998">
+			<list name="unit_type_list" overrideParent="True">
+				<enum name="unit_type" value="military" List.ItemID="1643785813" />
+				<enum name="unit_type" value="cavalry" List.ItemID="-1662001102" />
+				<enum name="unit_type" value="cavalry_archer" List.ItemID="-812984588" />
+				<enum name="unit_type" value="human" List.ItemID="-844702225" />
+				<enum name="unit_type" value="horse" List.ItemID="127903806" />
+				<enum name="unit_type" value="formational" List.ItemID="1552671223" />
+				<enum name="unit_type" value="ranged" List.ItemID="-1102012301" />
+				<enum name="unit_type" value="archer" List.ItemID="1188061218" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="-293278933" />
+				<enum name="unit_type" value="included_by_military_hotkeys" List.ItemID="1484160813" />
+				<enum name="unit_type" value="onna_musha_jpn" List.ItemID="784960440" />
+				<enum name="unit_type" value="land_military" List.ItemID="1724350420" />
+				<enum name="unit_type" value="find_non_siege_land_military" List.ItemID="544270584" />
+			</list>
+			<list name="race_type_list" overrideParent="True">
+				<instance_reference name="race_type" value="racebps\rus" List.ItemID="1475911251" />
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="-85834097" List.ParentItemID="-85834097">
+			<string name="speaker_code" value="horsemanArcherFemale" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" overrideParent="True" List.ItemID="181591875" List.ParentItemID="181591875">
+			<list name="tier_group_list" overrideParent="True">
+				<list name="tier_group" overrideParent="True" List.ItemID="-99084780">
+					<group name="tier" List.ItemID="716669947">
+						<list name="tier_requirements">
+						</list>
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\units\tier3_cavalry_horsearcher_jpn" overrideParent="True" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+					<group name="tier" List.ItemID="-1086502177">
+						<list name="tier_requirements" overrideParent="True">
+						</list>
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\rus\units\tier4_cavalry_horsearcher_rus" />
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" overrideParent="True" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\races\japanese\units\upgrade_unit_horsearcher_4_jpn" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="ebps\races\japanese\units\unit_horsearcher_4_jpn" mod="b92f22e9bbfc4589b3a3e8282a9a7675" overrideParent="True" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="sbps\races\japanese\unit_horsearcher_4_jpn" overrideParent="True" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-301632025" List.ParentItemID="-301632025">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\japanese\horsearcher_jpn" overrideParent="True" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\combat_ext" List.ItemID="698418421" List.ParentItemID="698418421">
+			<list name="hardpoints">
+				<group name="hardpoint" List.ItemID="627415271" List.ParentItemID="627415271">
+					<list name="weapon_table" removedIds="1502713306">
+						<group name="weapon" List.ItemID="156392194" List.ParentItemID="156392194">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\japanese\ranged\weapon_horsearcher_3_jpn" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\japanese\weapons\wpn_range_horsearcher_3_jpn" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+						<group name="weapon" List.ItemID="-1392982238" List.ParentItemID="-1392982238">
+							<template_reference name="weapon_entity_attachment" value="" overrideParent="True">
+							</template_reference>
+							<template_reference name="non_entity_weapon_wrapper" value="non_entity_weapon_wrapper" overrideParent="True">
+								<instance_reference name="non_entity_weapon_wrapper_pbg" value="weapon\races\japanese\ranged\weapon_horsearcher_incendiary_3_jpn" overrideParent="True" />
+								<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\japanese\weapons\wpn_range_horsearcher_3_jpn" overrideParent="True" />
+								<string name="marker_name_parent" value="MetaRig_LArmPalmSocket" overrideParent="True" />
+							</template_reference>
+						</group>
+					</list>
+				</group>
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2121982" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\units\unit_horsearcher_3" />
+</instance>

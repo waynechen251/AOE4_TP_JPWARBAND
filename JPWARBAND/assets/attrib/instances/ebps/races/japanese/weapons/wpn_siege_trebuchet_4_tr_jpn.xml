@@ -1,0 +1,10 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="314581999" List.ParentItemID="314581999">
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\chinese\weapons\wpn_siege_trebuchet_4_tr_chi" overrideParent="True" />
+			<bool name="browsable_in_editor" value="True" overrideParent="True" />
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="8601161" />
+	<instance_reference name="parent_pbg" value="ebps\races\core\weapons\wpn_siege_trebuchet_4_traction" />
+</instance>

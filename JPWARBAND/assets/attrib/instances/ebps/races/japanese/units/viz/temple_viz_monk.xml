@@ -1,0 +1,180 @@
+<instance version="4" description="" template="ebps">
+	<list name="extensions">
+		<template_reference name="exts" value="ebpextensions\entity_blueprint_ext" List.ItemID="529731029" List.ParentItemID="-1291264015">
+			<float name="entity_scale" value="80" />
+			<file name="alternate_sua" value="" />
+			<bool name="always_revealed_in_fow" value="False" />
+			<bool name="is_visible_in_game" value="True" />
+			<int name="precise_size" value="1" />
+			<enum name="default_spawn_type" value="" />
+			<instance_reference name="unit_badge" value="" />
+			<bool name="is_spawned_when_not_in_interactive_area" value="True" />
+			<bool name="is_wreck" value="False" />
+			<instance_reference name="animator_attachments" value="attachments\attachment_lists\races\core\units\unit_monk_3" />
+			<float name="animator_scale" value="122" />
+			<bool name="browsable_in_editor" value="False" />
+			<enum name="subclass_type" value="Unit" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\sim_entity_ext" List.ItemID="1887302617" List.ParentItemID="-1155758028">
+			<float name="rotate_snap" value="360" />
+			<bool name="kill_paradrop" value="False" />
+			<enum name="transferable" value="None" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\type_ext" List.ItemID="-378810174" List.ParentItemID="-26664171">
+			<list name="race_type_list">
+				<instance_reference name="race_type" value="racebps\japanese" List.ItemID="111072082" List.ListAction="Append" />
+			</list>
+			<list name="unit_type_list">
+				<enum name="unit_type" value="trade_cart" List.ItemID="-1782419198" List.ParentItemID="1240732086" />
+				<enum name="unit_type" value="human" List.ItemID="421144538" List.ParentItemID="692374246" />
+				<enum name="unit_type" value="worker" List.ItemID="-962274195" List.ParentItemID="-1274261239" />
+				<enum name="unit_type" value="annihilation_condition" List.ItemID="1334870248" List.ParentItemID="-356104533" />
+			</list>
+			<enum name="weapon_targeting" value="automatic" />
+			<enum_table name="weapon_category_targeting_filter">
+				<bool name="1melee" value="True" />
+				<bool name="2ranged" value="True" />
+				<bool name="3siege" value="False" />
+				<bool name="4charge" value="False" />
+				<bool name="5brace" value="True" />
+				<bool name="6auto_ability_cast" value="True" />
+				<bool name="7single_cast_ability" value="True" />
+				<bool name="8dummy" value="False" />
+				<bool name="9idle" value="True" />
+			</enum_table>
+			<bool name="intersection_testing" value="False" />
+			<list name="attack_target_restriction_on_attacker">
+			</list>
+			<list name="attack_target_restriction_on_victim">
+				<enum name="unit_type" value="stone_wall" List.ItemID="-488156550" List.ParentItemID="494024379" />
+			</list>
+			<list name="unit_type_list_selection_keybind_only">
+			</list>
+			<list name="unit_type_list_ui_appear_as_only">
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\posture_ext" List.ItemID="2117104286" List.ParentItemID="1739205119">
+			<instance_reference name="posture_group" value="posture\default_posture_group" />
+			<bool name="uses_posture_speed" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\speech_ext" List.ItemID="1783501114" List.ParentItemID="-1475744177">
+			<string name="speaker_code" value="monk" />
+			<group name="speech_parameters">
+				<string name="class_code" value="" />
+				<string name="name_code" value="" />
+				<string name="unit_code" value="" />
+			</group>
+			<int name="importance" value="1" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_tree_ext" List.ItemID="1303396673" List.ParentItemID="-1245132514">
+			<state_tree_node name="ActionTree_OpeningBranch" value="unit_monk" />
+			<bool name="start_suspended" value="False" />
+			<state_tree_node name="fallback_default_move_command_conditions" value="" />
+			<list name="events">
+			</list>
+			<enum name="stop_on_death" value="Default" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\entity_targeting_ext" List.ItemID="1374600482" List.ParentItemID="1790956016">
+			<bool name="allow_weapon_target_scanning" value="False" />
+			<int name="history_size" value="2" />
+			<bool name="allow_entity_scan_close_enemies" value="False" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\animation_action_tree_ext" List.ItemID="-382785085" List.ParentItemID="-1775621726">
+			<state_tree_node name="ActionTree_OpeningBranch" value="anims_monk\Locomotion\Idle" />
+			<bool name="use_root_motion" value="True" />
+			<bool name="start_suspended" value="False" />
+			<enum name="entity_statetree_sort_tag" value="Default" />
+			<float name="speed_scale_threshold" value="100" />
+			<string name="default_animation" value="Idle" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\tier_ext" List.ItemID="-68674945" List.ParentItemID="-1178329849">
+			<list name="tier_group_list">
+				<list name="tier_group" List.ItemID="-1890871580" List.ParentItemID="1503111385">
+					<group name="tier" List.ItemID="-581493210" List.ParentItemID="1814506053">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\units\tier4_monk_jpn" />
+						<list name="tier_requirements">
+						</list>
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+					<group name="tier" List.ItemID="-1344078095" List.ParentItemID="-323743716">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\japanese\units\tier4_monk_jpn" />
+						<list name="tier_requirements">
+						</list>
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\castle_age" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+					<group name="tier" List.ItemID="1273118363" List.ParentItemID="-613616508">
+						<instance_reference name="attachments" value="attachments\attachment_lists\civilizations\abbasid\units\tier4_trade_cart_abb" />
+						<list name="tier_requirements">
+						</list>
+						<template_reference name="statetree_tier_reached_actions" value="state_tree_reference_info">
+							<state_tree_node name="ActionTree_OpeningBranch" value="tier_unit_exposure_dca" />
+							<bool name="start_suspended" value="False" />
+						</template_reference>
+						<instance_reference name="statetree_tier_requirements_pbg" value="upgrade\dev\ages\imperial_age" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_entity" value="" />
+						<instance_reference name="statetree_tier_pgb_upgrade_target_squad" value="" />
+						<string name="tier_attachment_action" value="" />
+						<template_reference name="blueprint_conversion_parameters" value="blueprint_conversion_parameters">
+							<bool name="reissue_commands" value="False" />
+							<bool name="continue_state_trees" value="True" />
+							<bool name="remove_from_pending_deaths" value="False" />
+							<bool name="enable_all_extensions" value="True" />
+						</template_reference>
+						<string name="inventory_category_to_refresh_on_tier_up" value="" />
+					</group>
+				</list>
+			</list>
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\statemodel_ext" List.ItemID="-32082103" List.ParentItemID="-2086016410">
+			<instance_reference name="schema" value="statemodel_schema\units\civilizations\abbasid_ha_01\trader_viz" />
+		</template_reference>
+		<template_reference name="exts" value="ebpextensions\action_apply_ext" List.ItemID="1082928007">
+			<list name="action_state_trees">
+			</list>
+			<bool name="reset_on_load" value="True" />
+			<list name="physical_state_trees">
+			</list>
+			<list name="deferred_action_state_trees">
+				<group name="container" List.ItemID="182866757">
+					<string name="state_tree" value="upgrade_temple_five_mountain_visual_check" />
+				</group>
+			</list>
+			<list name="action_state_trees_run_once">
+			</list>
+			<list name="deferred_action_state_trees_run_once">
+			</list>
+			<list name="physical_state_trees_run_once">
+			</list>
+		</template_reference>
+	</list>
+	<uniqueid name="pbgid" value="2158900" />
+	<instance_reference name="parent_pbg" value="" />
+</instance>
