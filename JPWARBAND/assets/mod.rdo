@@ -4,7 +4,18 @@
 		<DataProperty Name="m_description" Type="Object">
 			<DataValue Name="util::ReflectLocString">5542240382538789889</DataValue>
 			<!--JPWARBAND/util::ReflectLocString/-->
-			<DataObject Name="" Type="util::ReflectLocString" Id="5542240382538789889" OwnerId="4284891428995504997">
+			<DataObject Name="" Type="util::ReflectLocString" Id="5542240382538789889" OwnerId="4284891428995504997" Comment="https://www.youtube.com/watch?v=GN-4k5ry8S8
+
+世紀帝國4擴充套件-日本戰團
+日本文明數值調整
+
+
+@@ -7,3 +9,5 @@
+4. 所有建築原建造時間大於5秒者，一律調整為5秒
+5. 所有科技免費
+6. 所有科技原研究時間大於5秒者，一律調整為5秒
+
+※ 以上僅針對日本獨有單位/建築/科技，各文明通用類型數據並沒有覆蓋">
 				<DataProperty Name="m_modPart2" Type="UInt32" Value="686334899"/>
 				<DataProperty Name="m_modPart3" Type="UInt32" Value="1970706986"/>
 				<DataProperty Name="m_modPart0" Type="UInt32" Value="3106874089"/>
